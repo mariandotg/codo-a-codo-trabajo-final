@@ -1,6 +1,6 @@
 package models;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Member {
     private int memberId;
@@ -9,9 +9,9 @@ public class Member {
     private int nationalId;
     private String email;
     private boolean state;
-    private Date enrollmentDate;
+    private LocalDate enrollmentDate;
 
-    public Member(int memberId, String name, String lastName, int nationalId, String email, boolean state, Date enrollmentDate) {
+    public Member(int memberId, String name, String lastName, int nationalId, String email, boolean state, LocalDate enrollmentDate) {
         this.setMemberId(memberId);
         this.setName(name);
         this.setLastName(lastName);
@@ -69,11 +69,11 @@ public class Member {
         this.state = state;
     }
 
-    public Date getEnrollmentDate() {
+    public LocalDate getEnrollmentDate() {
         return enrollmentDate;
     }
 
-    public void setEnrollmentDate(Date enrollmentDate) {
+    public void setEnrollmentDate(LocalDate enrollmentDate) {
         this.enrollmentDate = enrollmentDate;
     }
 }
