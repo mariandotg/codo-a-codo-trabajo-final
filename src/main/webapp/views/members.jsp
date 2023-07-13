@@ -27,47 +27,49 @@
         <div class="container">
 		    <div class="row">
                 <div class="button-container">
-                    <h4>Listado de Socios</h4>
+                    <h3>Listado de Socios</h3>
                     <a class="btn btn-primary col-4" href="MemberController?action=nuevo">Agregar Socio</a>
                 </div>
 
-                <table class="table table-hover table-sm">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">DNI</th>
-                            <th scope="col">Fecha de alta</th>
-                            <th scope="col">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <%
-                        List<Member> resultado = null;
-                        MemberDao socio = new MemberDao();
-                        resultado = socio.getMembers();
-
-                        for(int x = 0; x < resultado.size(); x++) {
-                            String ruta = "MemberController?action=modificar&id=" + resultado.get(x).getMemberId();
-                            String rutaE = "MemberController?action=eliminar&id=" + resultado.get(x).getMemberId();
-                        %>
+                <div>
+                    <table class="table table-sm">
+                        <thead>
                             <tr>
-                                <th scope="row"><%=resultado.get(x).getMemberId()%></th>
-                                <td><%=resultado.get(x).getName()%></td>
-                                <td><%=resultado.get(x).getLastName()%></td>
-                                <td><%=resultado.get(x).getNationalId()%></td>
-                                <td><%=resultado.get(x).getEnrollmentDate()%></td>
-                                <td class="actions">
-                                    <a href=<%=ruta%>>Editar</a>
-                                    <a href=<%=rutaE%> class="delete">Eliminar</a>
-                                </td>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">DNI</th>
+                                <th scope="col">Fecha de alta</th>
+                                <th scope="col">Acciones</th>
                             </tr>
-                        <%
-                        }
-                        %>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <%
+                            List<Member> resultado = null;
+                            MemberDao socio = new MemberDao();
+                            resultado = socio.getMembers();
+
+                            for(int x = 0; x < resultado.size(); x++) {
+                                String ruta = "MemberController?action=modificar&id=" + resultado.get(x).getMemberId();
+                                String rutaE = "MemberController?action=eliminar&id=" + resultado.get(x).getMemberId();
+                            %>
+                                <tr>
+                                    <th scope="row"><%=resultado.get(x).getMemberId()%></th>
+                                    <td><%=resultado.get(x).getName()%></td>
+                                    <td><%=resultado.get(x).getLastName()%></td>
+                                    <td><%=resultado.get(x).getNationalId()%></td>
+                                    <td><%=resultado.get(x).getEnrollmentDate()%></td>
+                                    <td class="actions">
+                                        <a href=<%=ruta%>>Editar</a>
+                                        <a href=<%=rutaE%> class="delete">Eliminar</a>
+                                    </td>
+                                </tr>
+                            <%
+                            }
+                            %>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </body>
