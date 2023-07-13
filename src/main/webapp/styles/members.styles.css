@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;700&family=Maven+Pro:wght@400;700;900&display=swap');
+
+* {
+    transition: 0.2s linear all;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #CECDBF;
+}
+
+table > thead {
+    color: #000000;
+}
+
+td > a {
+    padding: 16px;
+    font-weight: 700;
+    color: #002554;
+}
+
+td > a:hover {
+    color: #1d5194;
+}
+
+.delete:hover {
+    color: #ec1c24;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ec1c24;
+    height: 64px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > img {
+    height: 48px;
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+}
+
+.navbar-items > li {
+    font-weight: 700;
+    cursor: pointer;
+    color: #8d1118;
+}
+
+.navbar-items > li:hover {
+    color: #141414;
+}
+
+.btn-primary {
+    border: 0;
+    border-radius: 50px;
+    background-color: #002554;
+}
+
+.btn-primary:hover {
+    background-color: #1d5194;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    gap: 32px;
+}
+
+.actions {
+    width: fit-content;
+}
