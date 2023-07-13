@@ -90,10 +90,7 @@ header > nav > img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.row {
-    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .actions > a > i {
