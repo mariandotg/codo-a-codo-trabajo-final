@@ -65,13 +65,14 @@ header > nav > img {
     margin: 0;
 }
 
-.navbar-items > li {
+.navbar-items > li > a {
+    text-decoration: none;
     font-weight: 700;
     cursor: pointer;
     color: #8d1118;
 }
 
-.navbar-items > li:hover {
+.navbar-items > li > a:hover {
     color: #141414;
 }
 

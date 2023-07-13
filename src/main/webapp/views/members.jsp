@@ -17,9 +17,21 @@
             <nav class="container">
                 <img src="${pageContext.request.contextPath}/images/Escudo-principal.svg" alt="independiente">
                 <ul class="navbar-items">
-                    <li>INSTAGRAM</li>
-                    <li>FACEBOOK</li>
-                    <li>TWITTER</li>
+                    <li>
+                        <a href="https://www.instagram.com/caindependiente/" referrerpolicy="no-referrer" target="_blank">
+                            INSTAGRAM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Independiente/" referrerpolicy="no-referrer" target="_blank">
+                            FACEBOOK
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Independiente" referrerpolicy="no-referrer" target="_blank">
+                            TWITTER
+                        </a>    
+                    </li>
                     <li>SOCIOS</li>
                 </ul>
             </nav>
