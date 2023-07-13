@@ -72,8 +72,8 @@
                                     <td><%=resultado.get(x).getNationalId()%></td>
                                     <td><%=resultado.get(x).getEnrollmentDate()%></td>
                                     <td class="actions">
-                                        <a href=<%=ruta%>>Editar</a>
-                                        <a href=<%=rutaE%> class="delete">Eliminar</a>
+                                        <a href=<%=ruta%>><i class="fa-solid fa-edit"></i>Editar</a>
+                                        <a href=<%=rutaE%> class="delete"><i class="fa-solid fa-trash"></i>Eliminar</a>
                                     </td>
                                 </tr>
                             <%

@@ -95,3 +95,8 @@ header > nav > img {
 .row {
     gap: 32px;
 }
+
+.actions > a > i {
+    margin-right: 8px;
+    transition: 0ms all;
+}
