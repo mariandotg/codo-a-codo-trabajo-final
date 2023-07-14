@@ -49,6 +49,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
+                                <th scope="col">Estado</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">DNI</th>
@@ -68,6 +69,20 @@
                             %>
                                 <tr>
                                     <th scope="row"><%=resultado.get(x).getMemberId()%></th>
+                                    <td>
+                                        <%
+                                        boolean state = resultado.get(x).isState();
+                                        if(state) {
+                                        %>
+                                            <span class="state-active">Activo</span>
+                                        <%
+                                        } else {
+                                        %>
+                                            <span class="state-deactive">Inactivo</span>
+                                        <%
+                                        }
+                                        %>
+                                    </td>
                                     <td><%=resultado.get(x).getName()%></td>
                                     <td><%=resultado.get(x).getLastName()%></td>
                                     <td><%=resultado.get(x).getNationalId()%></td>

@@ -101,3 +101,23 @@ header > nav > img {
     margin-right: 8px;
     transition: 0ms all;
 }
+
+.state-active, .state-deactive {
+    padding: 2px 16px!important;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 64px;
+    height: fit-content;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.state-active {
+    background-color: #3df24955!important;
+    color: #1b8109!important;
+}
+
+.state-deactive {
+    background-color: #f0393f55!important;
+    color: #b30c11!important;
+}
